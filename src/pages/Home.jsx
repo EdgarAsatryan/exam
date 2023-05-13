@@ -8,16 +8,16 @@ import SpendAndSave from '../Components/ui/SpendAndSave'
 import TrendGames from '../Components/ui/TrendGames'
 import Disk from '../Components/Disk'
 
-export default function Home() {
+export default function Home({filter, handleFilter,addToCart}) {
   return (
     <div>
       <Hero/>
-      <BestSeller/>
-      <Category/>
+      <BestSeller addToCart={addToCart} filter={filter} handleFilter={handleFilter}/>
+      <Category filter={filter} handleFilter={handleFilter}/>
       <Sale/>
-      <Upgrade/>
+      <Upgrade addToCart={addToCart} filter={filter} handleFilter={handleFilter}/>
       <SpendAndSave/>
-      <TrendGames/>
+      <TrendGames addToCart={addToCart} filter={filter} handleFilter={handleFilter}/>
       <Disk/>
     </div>
   )

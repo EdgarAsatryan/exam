@@ -3,10 +3,10 @@ import NavBar from '../Components/ui/NavBar'
 import { Outlet } from 'react-router-dom'
 import Footer from '../Components/ui/Footer'
 
-export default function LayOut() {
+export default function LayOut({cartList}) {
   return (
     <>
-        <NavBar/>
+        <NavBar cartList={cartList}/>
         <Outlet/>
         <Footer/>
     </>
