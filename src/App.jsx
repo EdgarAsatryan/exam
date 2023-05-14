@@ -9,8 +9,8 @@ import NotFound from './pages/NotFound'
 import { useState } from 'react'
 
 
-function App() {
 
+function App() {
   const [cartList, setCartList] = useState([])
   const [filter,setFilter] = useState('')
   function handleFilter(e) {

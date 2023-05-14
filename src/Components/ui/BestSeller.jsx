@@ -28,7 +28,7 @@ export default function BestSeller({filter,handleFilter,addToCart}) {
         <button className='w-[120px] h-[40px] bg-white p-2 flex justify-center items-center rounded-3xl  text-[#8355e4] font-semibold'>View All</button>
         </Link>
     </div>
-    <div className='flex gap-4 mt-10 md:gap-0'>
+    <div className='flex mt-10 md:gap-0'>
     <button className='' onClick={handleLeft}><AiOutlineArrowLeft className='text-white text-[40px]'/></button>
       <div className=' flex w-[300px] h-[450px] flex-col items-center overflow-hidden justify-between'>
         <div className='overflow-hidden'>
